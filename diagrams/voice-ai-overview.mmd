@@ -1,0 +1,10 @@
+flowchart LR
+    User[ユーザー発話] --> Mic[音声入力 / Mic]
+    Mic --> Wake[Wake Word]
+    Wake --> ASR[ASR / 音声認識]
+    ASR --> NLU[NLU / 意味理解]
+    NLU --> DM[Dialog Manager]
+    DM --> Skill[Skill / Domain]
+    Skill --> API[Vehicle API]
+    API --> TTS[TTS / 音声合成]
+    TTS --> User
