@@ -42,7 +42,7 @@
 
 ## 全体像マップ
 
-![車載音声認識システム 全体像マップ](assets/voice-ai-overview-cheatsheet.svg)
+![車載音声認識システム 全体像マップ](assets/voice-ai-overview-cheatsheet.png)
 
 この1枚チートシートは、音声入力から車両制御までの処理フロー、構成要素、横断的な仕組み、評価・認証・運用観点を俯瞰するための入口です。詳細は `docs/` の各章で確認してください。
 
