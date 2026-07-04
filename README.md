@@ -39,6 +39,13 @@
 - agents/
 - 生成AIに説明、出題、レビューをさせる
 
+
+## 全体像マップ
+
+![車載音声認識システム 全体像マップ](assets/voice-ai-overview-cheatsheet.svg)
+
+この1枚チートシートは、音声入力から車両制御までの処理フロー、構成要素、横断的な仕組み、評価・認証・運用観点を俯瞰するための入口です。詳細は `docs/` の各章で確認してください。
+
 ## 学習ロードマップ
 
 1. `cheatsheets/voice-ai-overview.md` と `diagrams/voice-ai-overview.mmd` で全体像を把握する。
