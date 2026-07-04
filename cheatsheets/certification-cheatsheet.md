@@ -1,0 +1,7 @@
+# Certification Cheatsheet
+
+- 重要概念
+- 設計観点
+- ログ観点
+- よくある不具合
+- レビュー質問
