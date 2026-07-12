@@ -65,6 +65,11 @@ False Wake RateとMiss Wake Rateは分母と観測時間を明記します。実
 
 評価指標は数値だけでなく、分母、測定区間、条件、版情報とセットです。End-to-end結果と段階別指標を関連づけ、平均に隠れた失敗を確認します。
 
+## 参考資料
+
+- [SCTK, the NIST Scoring Toolkit — NIST](https://github.com/usnistgov/SCTK): ASRのAlignment、Word Error、複数Systemの統計比較を行う公開Toolkitです。
+- [Media Capture and Streams — W3C](https://www.w3.org/TR/mediacapture-streams/): Sampling Rate、Latency、Channel Countなど、音声評価条件に関係する標準化された属性を確認できます。
+
 ## 関連クイズ
 
 [この章の理解度を確認する](../quizzes/chapter11_metrics.md)

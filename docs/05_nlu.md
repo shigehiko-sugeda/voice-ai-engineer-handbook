@@ -114,6 +114,13 @@ NLUは「この発話が何を意味するか」を推定します。Dialog Mana
 
 NLUはASR文字列を実行可能な意味構造へ変換します。型と正規化、Contextの寿命、曖昧時の確認、ASRとは別の評価とログが重要です。
 
+## 参考資料
+
+- [Intents — Dialogflow ES, Google Cloud](https://cloud.google.com/dialogflow/es/docs/intents-overview): Intent、Training Phrase、Parameter、Entity、Responseの具体的な構成例を確認できます。
+- [Input and output contexts — Dialogflow ES, Google Cloud](https://cloud.google.com/dialogflow/es/docs/contexts-input-output): ContextによるIntent MatchingとLifespanの考え方を確認できます。
+
+これらはDialogflowの製品仕様です。本章では、特定製品に依存しないNLU設計概念を説明しています。
+
 ## 関連クイズ
 
 [この章の理解度を確認する](../quizzes/chapter05_nlu.md)

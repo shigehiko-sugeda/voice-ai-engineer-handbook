@@ -65,6 +65,11 @@ Endpointを短くすると応答は速くなりますが、考えながら話す
 
 ASRは音声を文字列にし、最終結果をNLUへ渡します。精度、Endpoint、Latencyを分け、音声条件と設定を再現できるログを残します。
 
+## 参考資料
+
+- [Web Speech API Specification — W3C Speech API Community Group](https://dvcs.w3.org/hg/speech-api/raw-file/tip/webspeechapi): Recognition Result、Alternative、Event、ErrorなどASR APIの概念を確認できます。W3C標準ではなくCommunity Group仕様である点に注意してください。
+- [SCTK, the NIST Scoring Toolkit — NIST](https://github.com/usnistgov/SCTK): ASR結果のAlignment、Word Error、統計比較に使われる公開Toolkitです。
+
 ## 関連クイズ
 
 [この章の理解度を確認する](../quizzes/chapter04_asr.md)

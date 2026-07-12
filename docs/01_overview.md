@@ -72,6 +72,10 @@ User ← Speaker ← TTS ← Response ------------------------------+
 
 車載音声機能は、音声入力、文字化、意味理解、対話判断、車両実行、応答の連鎖です。レビューでは各コンポーネントの責務と境界、Timeout、競合、関連ログを分けて確認します。
 
+## 参考資料
+
+- [About voice interaction — Android Open Source Project](https://source.android.com/docs/automotive/voice/voice_interaction_guide): 車載Voice InteractionのTrigger、Session、Recognition Service、車両機能連携を確認できます。
+
 ## 関連クイズ
 
 [この章の理解度を確認する](../quizzes/chapter01_overview.md)

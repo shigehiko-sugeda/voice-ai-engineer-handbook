@@ -78,6 +78,11 @@ Audio Processが停止した場合、Watchdogが検知し、Voice AssistantはLi
 
 アーキテクチャレビューでは、責務と状態の所有者、IPC契約、Queue制御、障害検知、Fallback、復旧を確認します。正常時の図だけでなく、停止時の遷移を設計します。
 
+## 参考資料
+
+- [Quality Attributes — Carnegie Mellon University Software Engineering Institute](https://www.sei.cmu.edu/library/quality-attributes/): Architectureと性能、信頼性、変更容易性などの品質属性を関連づける基礎資料です。
+- [Architecture Tradeoff Analysis Method Collection — Carnegie Mellon University Software Engineering Institute](https://www.sei.cmu.edu/library/architecture-tradeoff-analysis-method-collection/): 品質属性間のTrade-offとArchitecture Riskを評価する方法を確認できます。
+
 ## 関連クイズ
 
 [この章の理解度を確認する](../quizzes/chapter12_architecture.md)

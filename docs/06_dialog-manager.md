@@ -73,6 +73,10 @@ Dialog ManagerはNLU結果と現在の状態から、次のアクションを決
 
 Dialog Managerは対話をState、Event、Sessionで制御します。正常系だけでなく、曖昧性、割り込み、Timeout、遅延応答から安全にIdleへ戻れるかをレビューします。
 
+## 参考資料
+
+- [State Chart XML（SCXML）— W3C Recommendation](https://www.w3.org/TR/scxml/): Event駆動のState、Transition、Final State、並行状態を定義する標準仕様です。
+
 ## 関連クイズ
 
 [この章の理解度を確認する](../quizzes/chapter06_dialog-manager.md)

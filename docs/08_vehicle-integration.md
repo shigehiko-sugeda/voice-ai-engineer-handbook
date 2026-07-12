@@ -65,6 +65,13 @@ Dialog Manager → Domain Service → Vehicle API → Gateway / ECU
 
 車両連携では、意味理解の結果を安全なAPI要求へ変換し、実行結果を確認して応答します。制約、非同期性、重複、Timeoutを境界仕様としてレビューします。
 
+## 参考資料
+
+- [Vehicle HAL overview — Android Open Source Project](https://source.android.com/docs/automotive/vhal): Android Automotive OSにおけるVehicle PropertyとVHALの境界を確認できます。
+- [CarPropertyManager — Android Developers](https://developer.android.com/reference/android/car/hardware/property/CarPropertyManager): 車両Propertyの取得、更新、Callback、Errorを扱う公開APIの例です。
+
+これらはAndroid Automotive OSの公開仕様です。実際の車両API、権限、値域は対象システムの正式仕様を確認してください。
+
 ## 関連クイズ
 
 [この章の理解度を確認する](../quizzes/chapter08_vehicle-integration.md)

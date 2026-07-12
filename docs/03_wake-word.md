@@ -65,6 +65,10 @@ Idle → Wake候補検出 → しきい値判定 → Mic取得 → ASR Listening
 
 Wake Wordは検出モデルだけでなく、Session開始、競合抑制、表示、マイク解放まで含む機能です。精度と起動後の状態遷移を一緒にレビューします。
 
+## 参考資料
+
+- [Integration flows — Android Open Source Project](https://source.android.com/docs/automotive/voice/voice_interaction_guide/integration_flows): Hotword、Push-to-Talk、Tap-to-Talkによる車載Voice Sessionの起動フローを確認できます。
+
 ## 関連クイズ
 
 [この章の理解度を確認する](../quizzes/chapter03_wake-word.md)

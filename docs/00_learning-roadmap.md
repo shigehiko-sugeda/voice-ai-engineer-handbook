@@ -104,3 +104,7 @@ AI家庭教師を使う場合は、いきなり模範解答を求めず、「ヒ
 ## まとめ
 
 最初にPipeline全体をつかみ、次に各コンポーネントの責務を学び、車載固有の競合と制約へ進みます。最後に評価指標とアーキテクチャを使って、正常系だけでなく、Timeout、競合、障害復旧、ログまでレビューできる状態を目指します。
+
+## 参考資料
+
+- [About voice interaction — Android Open Source Project](https://source.android.com/docs/automotive/voice/voice_interaction_guide): Android Automotive OSにおけるVoice Interactionの構成要素と責務を俯瞰できます。
