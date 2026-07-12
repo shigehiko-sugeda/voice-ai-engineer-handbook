@@ -49,10 +49,11 @@
 ## 学習ロードマップ
 
 1. `cheatsheets/voice-ai-overview.md` と `diagrams/voice-ai-overview.mmd` で全体像を把握する。
-2. `docs/01_overview.md` から `docs/13_llm-integration.md` まで順番に読む。
-3. 各章の確認問題で理解を確認する。
-4. `exercises/` で設計・解析の練習をする。
-5. `prompts/` と `agents/` を使い、AIに追加問題やレビューを依頼する。
+2. `docs/00_learning-roadmap.md` で学習順序と到達目標を確認する。
+3. `docs/01_overview.md` から `docs/13_llm-integration.md` まで順番に読む。
+4. 各章の確認問題で理解を確認する。
+5. `exercises/` で設計・解析の練習をする。
+6. `prompts/` と `agents/` を使い、AIに追加問題やレビューを依頼する。
 
 ## 各章一覧
 
@@ -84,7 +85,7 @@
 1. まず自分で仮説を書く。
 2. 章の本文とチートシートを見て観点漏れを補う。
 3. AIにヒントを依頼する。ただし最初から模範解答を求めない。
-4. 設計レビューでは、機能・品質・ログ・認証・安全性を分けて確認する。
+4. 設計レビューでは、機能・品質・ログ・認証・安全性・運用を分けて確認する。
 
 ## 注意事項
 
