@@ -80,6 +80,13 @@
 - `prompts/explain_beginner.md` で難しい章を初心者向けに説明し直す。
 - `agents/` の役割別指示を使い、教師・レビューア・面接官としてAIを使い分ける。
 
+## チートシート
+
+- [`voice-ai-overview.md`](cheatsheets/voice-ai-overview.md): 車載Voice AIの全体フロー、評価、ログ、レビュー観点
+- [`nlu-cheatsheet.md`](cheatsheets/nlu-cheatsheet.md): Intent、Slot、Contextと曖昧性の扱い
+- [`dialog-cheatsheet.md`](cheatsheets/dialog-cheatsheet.md): State、Session、Timeoutと状態遷移
+- [`certification-cheatsheet.md`](cheatsheets/certification-cheatsheet.md): 外部アシスタント連携と認証確認事項
+
 ## 演習の進め方
 
 1. まず自分で仮説を書く。
