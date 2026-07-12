@@ -30,7 +30,8 @@ flowchart LR
     Failure --> TTS
     TTS -->|Audio Focus取得| Speaker[Speaker]
     Speaker --> User
-    TTS --> End[資源解放 / Session終了]
+    Speaker --> PlaybackDone[再生完了]
+    PlaybackDone --> End[資源解放 / Session終了]
     End --> Idle
 
     DM -->|Cancel / Timeout| End
@@ -42,6 +43,7 @@ flowchart LR
 - ASRは文字列、NLUは意味構造、Dialog Managerは次Actionを決めます。
 - Domain Serviceは、LLMやNLUの結果をそのまま実行せず、制約と権限を検証します。
 - Vehicle APIへの送信成功と車両での実行成功は区別します。
+- TTS合成完了と再生完了を区別し、通常時は再生完了後にAudio Focusを解放します。
 - Cancel、Timeout、Errorでも、Mic、Audio Focus、Contextを整理してIdleへ戻します。
 
 レビュー項目は[Voice AIレビュー・チートシート](../cheatsheets/voice-ai-review.md)を参照してください。
