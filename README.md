@@ -35,9 +35,9 @@
 - 不具合解析
 
 ### Layer 4: AI家庭教師
+
 - AGENTS.md
 - prompts/
-- agents/
 - 生成AIに説明、出題、レビューをさせる
 
 
@@ -54,7 +54,7 @@
 3. `docs/01_overview.md` から `docs/13_llm-integration.md` まで順番に読む。
 4. 各章の確認問題と[章別クイズ](quizzes/README.md)で理解を確認する。
 5. [`exercises/`](exercises/README.md)で設計・解析の練習をする。
-6. `prompts/` と `agents/` を使い、AIに追加問題やレビューを依頼する。
+6. `AGENTS.md`と`prompts/`を使い、AIに追加問題やレビューを依頼する。
 
 ## 各章一覧
 
@@ -82,7 +82,12 @@
 - [`explain_beginner.md`](prompts/explain_beginner.md)で難しい章を初心者向けに説明し直す。
 - [`generate_design_exercise.md`](prompts/generate_design_exercise.md)で設計演習を生成する。
 - [`interview.md`](prompts/interview.md)で段階的な面接練習を行う。
-- `agents/` の役割別指示を使い、教師・レビューア・面接官としてAIを使い分ける。
+- `AGENTS.md`の役割定義を使い、教師・レビューア・面接官としてAIを使い分ける。
+
+## 教材を追加する場合
+
+- [`templates/README.md`](templates/README.md)から、章、クイズ、演習、設計レビューのテンプレートを選ぶ。
+- `<...>`を対象内容へ置き換え、既存教材へのリンクと関連ID・ログ観点を追加する。
 
 ## チートシート
 
