@@ -1,38 +1,19 @@
-# 車載Voice AI 全体像チートシート
+# Voice AIレビュー・チートシート
 
-詳細は[車載音声認識の全体像](../docs/01_overview.md)を参照してください。
+このシートは設計・不具合調査で「何を確認するか」をまとめます。処理の流れは[Voice AI全体フロー](../diagrams/voice-ai-overview.md)、詳細は[車載音声認識の全体像](../docs/01_overview.md)を参照してください。
 
-## 全体フロー
+## コンポーネント境界
 
-```text
-Wake Word ─┐
-Voice Button ─┴→ Mic取得 → ASR → NLU → Dialog Manager → Domain Service → Vehicle API
-                              ↑            │                    ↓
-                           Context         └→ 応答生成 → TTS → Speaker
-```
-
-Vehicle APIへの要求送信と、車両での実行完了は別です。成功・失敗を確認してから応答します。
-
-## 各コンポーネントの責務
-
-| コンポーネント | 入力 | 主な判断・処理 | 出力 |
+| コンポーネント | 主な入力 | 主な出力 | レビューの焦点 |
 |---|---|---|---|
-| Wake Word / Voice Button | 音声またはボタンEvent | 起動条件、抑制条件 | Session開始要求 |
-| Audio | マイク・再生信号 | AEC、VAD、Routing | ASR用音声 |
-| ASR | 音声 | 文字化、Endpoint判定 | Partial / Final Result |
-| NLU | ASR結果、Context | Domain、Intent、Slot抽出 | 意味構造、Confidence |
-| Dialog Manager | NLU結果、State | 確認、候補選択、実行、終了 | 次Action |
-| Domain Service | 次Action、車両状態 | 値域、権限、実行可否 | Vehicle API要求 |
-| Vehicle API | 構造化要求 | 車両機能との連携 | 完了、現在値、失敗理由 |
-| TTS | 応答文 | 合成、Queue、割り込み | 再生音声 |
-
-## 車載固有の競合
-
-- 競合対象: 警告音、通話、ナビ案内、音楽、Siri、Google Assistant、自社Assistant。
-- 入力: マイクの所有者とMic Routingを一意にする。
-- 出力: 停止、Pause、Ducking、待機、継続のどれかを定義する。
-- 復帰: 割り込まれた処理を再開、再要求、破棄のどれにするか決める。
-- 異常時: TimeoutやProcess停止後にMicとAudio Focusを回収する。
+| Wake Word / Voice Button | 音声、Button Event | Session開始要求 | 起動・抑制・重複防止 |
+| Audio | マイク・再生信号 | ASR用音声 | AEC、VAD、Routing、欠落 |
+| ASR | 音声 | Final Result | Endpoint、Confidence、Latency |
+| NLU | ASR結果、Context | Intent / Slot | 正規化、曖昧性、Context期限 |
+| Dialog Manager | NLU結果、State | 次Action | 確認、Timeout、Cancel、遅延応答 |
+| Domain Service | 次Action、車両状態 | API要求 | 値域、権限、走行中制限 |
+| Vehicle API | 構造化要求 | 完了、現在値、失敗理由 | 非同期性、重複、Retry |
+| TTS | 応答文 | 再生音声 | 結果整合、Queue、割り込み |
 
 ## 主な評価指標
 
@@ -77,3 +58,9 @@ Vehicle APIへの要求送信と、車両での実行完了は別です。成功
 | 対話が終わらない | Dialog State、Timeout、古い非同期応答 |
 | 車両が動かない | 実行条件、Vehicle API結果、状態反映 |
 | 音が重なる・復帰しない | Audio Focus、Routing、Queue、解放ログ |
+
+## 関連図
+
+- [Dialog State](../diagrams/dialog-state.md)
+- [Audio FocusとArbitration](../diagrams/audio-focus-arbitration.md)
+- [プロセス構成](../diagrams/process-architecture.md)

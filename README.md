@@ -48,7 +48,7 @@
 
 ## 学習ロードマップ
 
-1. `cheatsheets/voice-ai-overview.md` と `diagrams/voice-ai-overview.mmd` で全体像を把握する。
+1. `diagrams/voice-ai-overview.md` と `cheatsheets/voice-ai-review.md` で全体像とレビュー観点を把握する。
 2. `docs/00_learning-roadmap.md` で学習順序と到達目標を確認する。
 3. `docs/01_overview.md` から `docs/13_llm-integration.md` まで順番に読む。
 4. 各章の確認問題で理解を確認する。
@@ -82,7 +82,7 @@
 
 ## チートシート
 
-- [`voice-ai-overview.md`](cheatsheets/voice-ai-overview.md): 車載Voice AIの全体フロー、評価、ログ、レビュー観点
+- [`voice-ai-review.md`](cheatsheets/voice-ai-review.md): 車載Voice AIの評価、ログ、レビュー観点
 - [`nlu-cheatsheet.md`](cheatsheets/nlu-cheatsheet.md): Intent、Slot、Contextと曖昧性の扱い
 - [`dialog-cheatsheet.md`](cheatsheets/dialog-cheatsheet.md): State、Session、Timeoutと状態遷移
 - [`certification-cheatsheet.md`](cheatsheets/certification-cheatsheet.md): 外部アシスタント連携と認証確認事項
