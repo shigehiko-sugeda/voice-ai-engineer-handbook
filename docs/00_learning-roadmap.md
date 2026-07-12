@@ -41,8 +41,10 @@
 | 入門 | 05 NLU、06 Dialog Manager | [Context演習](../exercises/beginner/02_context.md) | 発話だけでは判断できない情報をContextとして列挙できる |
 | 中級 | 09 Audio FocusとArbitration | [Audio Focus競合演習](../exercises/intermediate/01_audio-focus.md) | 優先度、ミュート、復帰条件、必要ログを設計できる |
 | 中級 | 06 Dialog Manager | [Dialog State設計演習](../exercises/intermediate/02_dialog-state.md) | 確認、候補選択、Timeout、キャンセルを状態遷移で表せる |
+| 中級 | 01〜11 音声Pipeline・評価 | [音声パイプライン・ログ解析演習](../exercises/intermediate/03_pipeline-log-analysis.md) | ログから確定事項と推測を分け、異常地点を特定できる |
 | 上級 | 12 アーキテクチャ | [アーキテクチャレビュー演習](../exercises/advanced/01_architecture-review.md) | IPC、Queue、Watchdog、Fallbackの不足を指摘できる |
 | 上級 | 08〜10 車載連携・競合・認証 | [認証リスク抽出演習](../exercises/advanced/02_certification-risk.md) | 公開情報と要確認事項を分けてリスクを整理できる |
+| 上級 | 08、13 車両・LLM連携 | [LLM安全設計レビュー演習](../exercises/advanced/03_llm-safety-review.md) | LLM出力と車両実行の間に安全境界を設計できる |
 | 総合 | 全章 | [設計レビュー練習](../exercises/review/design-review-practice.md) | 機能、品質、ログ、認証、安全性、運用の6観点で質問できる |
 
 ## 学び方

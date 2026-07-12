@@ -52,7 +52,7 @@
 2. `docs/00_learning-roadmap.md` で学習順序と到達目標を確認する。
 3. `docs/01_overview.md` から `docs/13_llm-integration.md` まで順番に読む。
 4. 各章の確認問題で理解を確認する。
-5. `exercises/` で設計・解析の練習をする。
+5. [`exercises/`](exercises/README.md)で設計・解析の練習をする。
 6. `prompts/` と `agents/` を使い、AIに追加問題やレビューを依頼する。
 
 ## 各章一覧
