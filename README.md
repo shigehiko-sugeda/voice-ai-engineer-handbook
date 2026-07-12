@@ -75,9 +75,12 @@
 
 ## AIを使った学習方法
 
-- `prompts/generate_quiz.md` で章ごとの理解度確認問題を生成する。
-- `prompts/generate_review.md` で設計案のレビュー観点を洗い出す。
-- `prompts/explain_beginner.md` で難しい章を初心者向けに説明し直す。
+- [`prompts/README.md`](prompts/README.md)で用途と使い方を確認する。
+- [`generate_quiz.md`](prompts/generate_quiz.md)で章ごとの理解度確認問題を生成する。
+- [`generate_review.md`](prompts/generate_review.md)で設計案のレビュー観点を洗い出す。
+- [`explain_beginner.md`](prompts/explain_beginner.md)で難しい章を初心者向けに説明し直す。
+- [`generate_design_exercise.md`](prompts/generate_design_exercise.md)で設計演習を生成する。
+- [`interview.md`](prompts/interview.md)で段階的な面接練習を行う。
 - `agents/` の役割別指示を使い、教師・レビューア・面接官としてAIを使い分ける。
 
 ## チートシート
