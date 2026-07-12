@@ -64,3 +64,7 @@ Idle → Wake候補検出 → しきい値判定 → Mic取得 → ASR Listening
 ## まとめ
 
 Wake Wordは検出モデルだけでなく、Session開始、競合抑制、表示、マイク解放まで含む機能です。精度と起動後の状態遷移を一緒にレビューします。
+
+## 関連クイズ
+
+[この章の理解度を確認する](../quizzes/chapter03_wake-word.md)

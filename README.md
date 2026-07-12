@@ -28,7 +28,8 @@
 - ASR / NLU / Dialog / TTS / 車載連携を順番に学ぶ
 
 ### Layer 3: 実践演習
-- クイズ
+
+- [章別クイズ](quizzes/README.md)
 - ケーススタディ
 - 設計レビュー
 - 不具合解析
@@ -51,7 +52,7 @@
 1. `diagrams/voice-ai-overview.md` と `cheatsheets/voice-ai-review.md` で全体像とレビュー観点を把握する。
 2. `docs/00_learning-roadmap.md` で学習順序と到達目標を確認する。
 3. `docs/01_overview.md` から `docs/13_llm-integration.md` まで順番に読む。
-4. 各章の確認問題で理解を確認する。
+4. 各章の確認問題と[章別クイズ](quizzes/README.md)で理解を確認する。
 5. [`exercises/`](exercises/README.md)で設計・解析の練習をする。
 6. `prompts/` と `agents/` を使い、AIに追加問題やレビューを依頼する。
 

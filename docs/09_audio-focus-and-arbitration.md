@@ -66,3 +66,7 @@ Audio要求 → Arbitration → Grant / Delay / Deny / Preempt
 ## まとめ
 
 Audio Focusは音声資源の所有権、Arbitrationは競合時の判断です。Grant前の利用禁止、割り込み方、復帰、異常時の回収までを設計します。
+
+## 関連クイズ
+
+[この章の理解度を確認する](../quizzes/chapter09_audio-focus-and-arbitration.md)

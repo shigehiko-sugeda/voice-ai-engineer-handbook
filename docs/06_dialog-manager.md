@@ -72,3 +72,7 @@ Dialog ManagerはNLU結果と現在の状態から、次のアクションを決
 ## まとめ
 
 Dialog Managerは対話をState、Event、Sessionで制御します。正常系だけでなく、曖昧性、割り込み、Timeout、遅延応答から安全にIdleへ戻れるかをレビューします。
+
+## 関連クイズ
+
+[この章の理解度を確認する](../quizzes/chapter06_dialog-manager.md)

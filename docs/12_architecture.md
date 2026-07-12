@@ -77,3 +77,7 @@ Audio Processが停止した場合、Watchdogが検知し、Voice AssistantはLi
 ## まとめ
 
 アーキテクチャレビューでは、責務と状態の所有者、IPC契約、Queue制御、障害検知、Fallback、復旧を確認します。正常時の図だけでなく、停止時の遷移を設計します。
+
+## 関連クイズ
+
+[この章の理解度を確認する](../quizzes/chapter12_architecture.md)

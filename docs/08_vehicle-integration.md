@@ -64,3 +64,7 @@ Dialog Manager → Domain Service → Vehicle API → Gateway / ECU
 ## まとめ
 
 車両連携では、意味理解の結果を安全なAPI要求へ変換し、実行結果を確認して応答します。制約、非同期性、重複、Timeoutを境界仕様としてレビューします。
+
+## 関連クイズ
+
+[この章の理解度を確認する](../quizzes/chapter08_vehicle-integration.md)
